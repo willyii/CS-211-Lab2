@@ -1,4 +1,11 @@
 #include "../include/for_you_to_do.h"
+
+int get_block_size(){
+    //return the block size you'd like to use 
+    /*add your code here */
+  
+}
+
 /**
  * 
  * this function computes LU factorization
@@ -16,6 +23,8 @@
  *      return  0 : return normally 
  * 
  **/
+
+
 int mydgetrf(double *A, int *ipiv, int n) 
 {
     /* add your code here */
