@@ -9,6 +9,7 @@
 #include <string.h>
 #include <pthread.h>
 
+int get_block_size();
 int mydgetrf(double *A, int *ipiv, int n);
 int mydgetrf_block(double *A, int *ipiv, int n, int b);
 void mydtrsv(char UPLO, double *A, double *B, int n, int *ipiv);
