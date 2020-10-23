@@ -80,7 +80,7 @@ void mydgemm(double *A, double *B, double *C, int n, int i, int j, int k, int b)
 
 /**
  * 
- * this function computes triangular matrix - vector solver
+ * this function computes LU decomposition
  * for a square matrix using block gepp introduced in course
  * lecture .
  * 
@@ -93,13 +93,14 @@ void mydgemm(double *A, double *B, double *C, int n, int i, int j, int k, int b)
  * 
  *      A     n by n     , square matrix
  * 
- *      B     1 by n     , vector
+ *    
  * 
  *      ipiv  1 by n     , vector , denotes interchanged index due
  *                                  to pivoting by mydgetrf()
  * 
  *      n                , length of vector / size of matrix
- *  
+ *     
+ *      b                , block size   
  *  output :
  *      return -1 : if the matrix A is singular (max pivot == 0)
  *      return  0 : return normally 
