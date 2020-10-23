@@ -89,9 +89,7 @@ void mydgemm(double *A, double *B, double *C, int n, int i, int j, int k, int b)
  * syntax 
  *  
  *  input :
- *      UPLO  'L' or 'U' , denotes whether input matrix is upper
- *                         lower triangular . ( forward / backward
- *                         substitution )
+ *      
  * 
  *      A     n by n     , square matrix
  * 
